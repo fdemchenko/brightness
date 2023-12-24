@@ -19,9 +19,9 @@ type Settings struct {
 func main() {
 	settings := Settings{}
 	flag.IntVar(&settings.Value, "value", 10, "brightness value")
-	flag.BoolVar(&settings.Absolute, "abs", false, "set value as is, or inc/dec by")
+	flag.BoolVar(&settings.Absolute, "abs", false, "set value as is instead of inc/dec by")
 	flag.BoolVar(&settings.Percent, "percent", false, "use percents instead of absolute value")
-	flag.BoolVar(&settings.GetValue, "get", false, "use percents instead of absolute value")
+	flag.BoolVar(&settings.GetValue, "get", false, "get current value")
 	flag.Parse()
 
 	bc, err := brightness.New()
