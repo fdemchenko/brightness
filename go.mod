@@ -1,3 +1,3 @@
-module github.com/fdemchenko/brightnessctl
+module github.com/fdemchenko/brightness
 
 go 1.21.5

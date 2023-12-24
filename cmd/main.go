@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	brightness "github.com/fdemchenko/brightnessctl"
+	"github.com/fdemchenko/brightness"
 )
 
 type Settings struct {
